@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>index</title>
+	<meta name="generator" content="TextMate http://macromates.com/">
+	<meta name="author" content="Greg Pfaff">
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="styles/android.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  
+  
+	<!-- Date: 2013-10-26 -->
+</head>
+<body>
+
+<header> <img src="img/temp.png" width="427" height="87" alt="Temp"></header>
+  <div class="android"> 
+    <div class="eyes"></div>
+    <div class="ants"></div>
+    <div class="hands-left"></div>
+    <div class="hands-right"></div>
+    <div class="legs"></div>
+      
+  </div>
+  
+  <div class="advertisment">
+    <img src="img/samsung-galaxy-s4-smartphone.jpg" width="680" height="407" alt="Samsung Galaxy S4 Smartphone"></img>
+    <button> Join the revolution! </button>
+  </div>
+  
+  <div class="forms">
+
+      <label>Full name:</label>
+      <input type="text" id="full_name" name="full_name" placeholder="Jane Doe" required>
+
+      <label>Email address:</label>
+      <input type="email" id="email_addr" name="email_addr" required>
+
+      <label>Razorfish Office</label>
+      <input type="location" id="office location" name="location" required 
+       oninput="check(this)">
+
+      <label>Submittal date:</label>
+      <input type="date" id="submittal" name="submittal" required>
+
+      <label>Enter your idea</label>
+      <output id="idea" name="idea"></output>
+      <br><br
+      
+      <input type="submit" value="Submit your Dedalus Idea!" /> 
+    </form>
+
+    <script>
+    function check(input) {
+      if (input.value != document.getElementById('email_addr').value) {
+        input.setCustomValidity('The two email addresses must match.');
+      } else {
+        // input is valid -- reset the error message
+        input.setCustomValidity('');
+      }
+    }
+    </script>
+  </div>
+  
+<script>
+ $(function(){
+   $('.android').click(function(){
+     $(this).fadeOut(2000);
+     $('.advertisment').fadeIn(5000);
+   });
+ });
+  
+</script>
+
+<script>
+  $(function(){
+    $('.advertisment').click(function(){
+      $(this).fadeOut(3000);
+      $('.forms').fadeIn(5000);
+    });
+  });
+</script>
+
+<footer> &copy GP 2013</footer>
+
+</body>
+</html>

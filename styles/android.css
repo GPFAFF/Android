@@ -1,0 +1,207 @@
+body{
+	background: url('../img/bg.png');
+}
+
+header{
+	color: #A5C63B;
+	font-family: 'Droid Sans Mono', sans-serif;
+	font-size: 44px;
+	text-align: center;
+}
+
+.android{
+	position:relative;
+	width: 200px;
+	height: 290px;
+	margin: 80px auto;
+	background: #A5C63B;
+	border-radius: 200px 200px 50px 50px;
+	-webkit-transition all .25s ease-out;
+}
+
+.android .eyes:after,
+.android .eyes:before{
+	content: '';
+	position:absolute;
+	display:block;
+	width: 18px;
+	height: 18px;
+	top: 35px;
+	left: 50px;
+	background: #fff;
+	border-radius: 15px;
+}
+
+.android .eyes:after{
+	left: auto;
+	right: 50px;
+}
+
+.android:hover .eyes:after,
+.android:hover .eyes:before{
+	height: 3px;
+	top: 43px;
+}
+
+.android .ants:after,
+.android .ants:before{
+	content:'';
+	position: absolute;
+	display: block;
+	width: 6px;
+	height: 40px;
+	top: -25px;
+	left: 50px;
+	background: #A5C63B;
+	border-radius: 5px;
+	-webkit-transform:rotate(-25deg);
+}
+
+.android .ants:after{
+	left:auto;
+	right:50px;
+	-webkit-transform:rotate(25deg);
+}
+.android .hands-left{
+	content:'';
+	position: absolute;
+	display: block;
+	width: 44px;
+	height: 150px;
+	top: 96px;
+	left: -52px;
+	background: #A5C63B;
+	border-radius: 44px;
+}
+
+.android .hands-right{
+	content:'';
+	position: absolute;
+	display: block;
+	width: 44px;
+	height: 150px;
+	top: 96px;
+	right: -52px;
+	background: #A5C63B;
+	border-radius: 44px;
+}
+
+.android:hover .hands-right{
+-webkit-transform: rotate(-120deg);
+-moz-transform: rotate(-120deg);
+-webkit-transform: rotate(-120deg); 
+-webkit-transition:1.5s ease;
+
+ top: 50px;
+
+}
+
+.android:hover .hands-left{
+	-webkit-transform: rotate(120deg);
+	-moz-transform: rotate(120deg);
+	-webkit-transform: rotate(120deg);
+	-webkit-transition:1.5s ease;
+	top: 50px;
+}
+
+.android .legs:after,
+.android .legs:before{
+	content:'';
+	position: absolute;
+	display: block;
+	width: 44px;
+	height: 90px;
+	bottom: -70px;
+	left: 40px;
+	background: #A5C63B;
+	border-radius: 44px;
+}
+
+.android .legs:after{
+	left:auto;
+	right:40px;
+}
+
+footer{
+	color: #A5C63B;
+	font-family: 'Droid Sans Mono', sans-serif;
+	text-align: center;
+	font-size: 14px;
+	padding: 20px;
+}
+.advertisment{
+	position:relative;
+	width: 660px;
+	height: 540px;
+	display: none;
+	margin: 0 auto;
+}
+.advertisment img{
+	background:url('../img/samsung-galaxy-s4-smartphone.jpg');
+	margin-top: 40px;
+	margin-left: -12px;
+	-webkit-transition: 2.0 ease;
+}
+.advertisment button{
+	background: #A5C63B;
+	color: white;
+	width: 150px;
+	height: 75px;
+	margin-left: 256px;
+	margin-top: 20px;
+	border-radius: 40px;
+}
+.forms{
+	background: #A5C63B;
+	width: 700px;
+	height: 790px;
+	border-radius: 25px;
+	display: none;
+	margin: 0 auto;
+	-webkit-transition: 1.0 ease;
+	  border-color: #e88;
+	  -webkit-box-shadow: 0 0 5px rgba(255, 0, 0, .8);
+	  -moz-box-shadow: 0 0 5px rbba(255, 0, 0, .8);
+	  -o-box-shadow: 0 0 5px rbba(255, 0, 0, .8);
+	  -ms-box-shadow: 0 0 5px rbba(255, 0, 0, .8);
+	  box-shadow:0 0 5px rgba(255, 0, 0, .8);
+	}
+
+	:required {
+	  border-color: #88a;
+	  -webkit-box-shadow: 0 0 5px rgba(0, 0, 255, .5);
+	  -moz-box-shadow: 0 0 5px rgba(0, 0, 255, .5);
+	  -o-box-shadow: 0 0 5px rgba(0, 0, 255, .5);
+	  -ms-box-shadow: 0 0 5px rgba(0, 0, 255, .5);
+	  box-shadow: 0 0 5px rgba(0, 0, 255, .5);
+	  margin-left: 200px;
+	}
+
+	input {
+	  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	  border:1px solid #ccc;
+	  font-size:20px;
+	  width:300px;
+	  min-height:30px;
+	  display:block;
+	  margin-bottom:15px;
+	  margin-top:5px;
+	  outline: none;
+
+	  -webkit-border-radius:5px;
+	  -moz-border-radius:5px;
+	  -o-border-radius:5px;
+	  -ms-border-radius:5px;
+	  border-radius:5px;
+	   margin-left: 200px;
+	}
+
+	input[type=submit] {
+	margin-left: 200px;
+	  background:none;
+	  padding:20px;
+	 
+	}
+label{
+	margin-left: 200px;
+}
