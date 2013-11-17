@@ -154,19 +154,22 @@ footer{
 .forms{
 	background: #A5C63B;
 	width: 700px;
-	height: 790px;
 	border-radius: 25px;
 	display: none;
 	margin: 0 auto;
-	-webkit-transition: 1.0 ease;
-	  border-color: #e88;
-	  -webkit-box-shadow: 0 0 5px rgba(255, 0, 0, .8);
-	  -moz-box-shadow: 0 0 5px rbba(255, 0, 0, .8);
-	  -o-box-shadow: 0 0 5px rbba(255, 0, 0, .8);
-	  -ms-box-shadow: 0 0 5px rbba(255, 0, 0, .8);
-	  box-shadow:0 0 5px rgba(255, 0, 0, .8);
+	padding: 4px;
+	-webkit-transition: 2.0 ease;
+	
 	}
-
+	
+label{
+	margin: 0 auto;
+	font-family: 'Droid Sans Mono', sans-serif;
+	font-size: 28px;
+}
+.form-input{
+	padding: 90px;
+}
 	:required {
 	  border-color: #88a;
 	  -webkit-box-shadow: 0 0 5px rgba(0, 0, 255, .5);
@@ -174,7 +177,7 @@ footer{
 	  -o-box-shadow: 0 0 5px rgba(0, 0, 255, .5);
 	  -ms-box-shadow: 0 0 5px rgba(0, 0, 255, .5);
 	  box-shadow: 0 0 5px rgba(0, 0, 255, .5);
-	  margin-left: 200px;
+	  
 	}
 
 	input {
@@ -187,21 +190,15 @@ footer{
 	  margin-bottom:15px;
 	  margin-top:5px;
 	  outline: none;
-
 	  -webkit-border-radius:5px;
 	  -moz-border-radius:5px;
 	  -o-border-radius:5px;
 	  -ms-border-radius:5px;
 	  border-radius:5px;
-	   margin-left: 200px;
+	   margin: 0 auto;
 	}
 
-	input[type=submit] {
-	margin-left: 200px;
-	  background:none;
-	  padding:20px;
-	 
-	}
-label{
-	margin-left: 200px;
+label style{
+	margin-left: 600px;
+	padding: 50px;
 }
