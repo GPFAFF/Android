@@ -32,23 +32,27 @@
   </div>
   
   <div class="forms">
+    
+    <div class="form-input">
 
       <label>Full name:</label>
       <input type="text" id="full_name" name="full_name" placeholder="Jane Doe" required>
 
       <label>Email address:</label>
       <input type="email" id="email_addr" name="email_addr" required>
+      
+      <label>Confirm Email address:</label>
+      <input type="email" id="email_addr" name="email_addr" required>
 
-      <label>Razorfish Offices</label>
+      <label>Razorfish Office:</label>
       <input type="location" id="office location" name="location" required 
        oninput="check(this)">
 
-      <label>Submittal dates:</label>
+      <label>Submittal date:</label>
       <input type="date" id="submittal" name="submittal" required>
 
-      <label>Enter your ideas</label>
+      <label>Enter your idea:</label>
       <output id="idea" name="idea"></output>
-      <br><br
       
       <input type="submit" value="Submit your Dedalus Idea!" /> 
     </form>
@@ -84,6 +88,7 @@
   });
 </script>
 
+</div>
 <footer> &copy GP 2013</footer>
 
 </body>
